@@ -1,0 +1,29 @@
+#footer {
+    background-color: #000;
+    color: #fff;
+}
+
+#footer h4, #footer a{
+    color: #fff;
+}
+
+#footer ul li::before {
+    border-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+   
+}
+
+@media screen and (min-width: 992px) {
+    
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}

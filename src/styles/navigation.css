@@ -1,0 +1,40 @@
+.navigation-in {
+    border-left: 1px solid var(--menu-border-color);
+}
+
+.navigation-in a{
+    color: #fff;
+}
+
+.navigation-in ul.menu-level-1 {
+    background-color: #000;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-in {
+        border-left: none;
+    }
+    
+    .navigation-in ul.menu-level-2 {
+        background-color: #000;
+        border: none;
+        border-left: 1px solid var(--menu-border-color);
+    }
+
+    .navigation-in ul.menu-level-2 a {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+
+}
