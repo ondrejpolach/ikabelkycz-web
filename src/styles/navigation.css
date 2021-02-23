@@ -1,11 +1,15 @@
 .navigation-in {
-    border-left: 1px solid var(--menu-border-color);
+    border-left: 3px solid var(--menu-border-color);
+    background-color: #000;
 }
 
 .navigation-in a{
     color: #fff;
 }
 
+.navigation-in a:hover {
+    color: var(--primary-color) !important;
+}
 .navigation-in ul.menu-level-1 {
     background-color: #000;
 }
@@ -18,7 +22,7 @@
     .navigation-in ul.menu-level-2 {
         background-color: #000;
         border: none;
-        border-left: 1px solid var(--menu-border-color);
+        border-left: 3px solid var(--menu-border-color);
     }
 
     .navigation-in ul.menu-level-2 a {

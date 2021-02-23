@@ -11,6 +11,20 @@
     border-color: #fff;
 }
 
+#footer .banner-horizontal {
+    padding: 29px 20px;
+    background: url('../assets/banner-horizontal.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+
+#footer .footer-newsletter {
+    border-top-style: solid;
+    border-top-width: 1px;
+}
 @media screen and (min-width: 768px) {
    
 }

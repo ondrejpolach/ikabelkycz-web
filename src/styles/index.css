@@ -1,5 +1,10 @@
 :root {
+    --primary-color: #801756;
     --product-border-color: #fff;
     --shadow-color: #ccc;
     --menu-border-color: #801756
+}
+
+body {
+    opacity: 0;
 }

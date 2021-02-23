@@ -5,6 +5,7 @@ import './styles/navigation.css';
 import './styles/footer.css';
 
 /* Assets */
+import logo from './assets/logo-1.png';
 
 /* Code */
 const App = function () {
@@ -24,16 +25,19 @@ const App = function () {
         $(window).on('scroll', () => {            
         });
 
-        self.currentOverallWrapper.animate({
+        $('body').animate({
             opacity: 1
-        }, 500);
-        self.footer.animate({
-            opacity: 1
-        }, 500);
+        }, 500);       
     }
 
     const func = () => {
+        $('#footer').prepend('<div class="container banner-horizontal">');
+        $('#footer .banner-wrapper img').attr('src', logo);
+        $('<div class="banner-grid">').insertAfter($('.type-detail .p-to-cart-block'));
 
+        const customContainer = $('<div class="custom-detail-container">');
+        customContainer.append($('.p-detail-tabs-wrapper')).append($('.p-param-block'))
+        customContainer.insertAfter($('.p-detail-inner'));
     }
 
     const onResize = () => {
