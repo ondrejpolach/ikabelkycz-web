@@ -6,6 +6,10 @@ import './styles/footer.css';
 
 /* Assets */
 import logo from './assets/logo-1.png';
+import fb1 from './assets/banner-footer-1.svg';
+import fb2 from './assets/banner-footer-2.svg';
+import fb3 from './assets/banner-footer-3.svg';
+import fb4 from './assets/banner-footer-4.svg';
 
 /* Code */
 const App = function () {
@@ -31,7 +35,12 @@ const App = function () {
     }
 
     const func = () => {
-        $('#footer').prepend('<div class="container banner-horizontal">');
+        const footerBanners = $('<div class="container banner-horizontal">');
+        footerBanners.append(`<img src="${fb1}"/>`);
+        footerBanners.append(`<img src="${fb2}"/>`);
+        footerBanners.append(`<img src="${fb3}"/>`);
+        footerBanners.append(`<img src="${fb4}"/>`);        
+        footerBanners.insertAfter($('#footer .footer-newsletter'));
         $('#footer .banner-wrapper img').attr('src', logo);
         $('<div class="banner-grid">').insertAfter($('.type-detail .p-to-cart-block'));
 

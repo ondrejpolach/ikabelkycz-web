@@ -8,7 +8,7 @@
 }
 
 .navigation-in a:hover {
-    color: var(--primary-color) !important;
+    color: #ddd !important;
 }
 .navigation-in ul.menu-level-1 {
     background-color: #000;
