@@ -8,3 +8,11 @@
 body {
     opacity: 0;
 }
+
+.search button::before {
+    color: #fff;
+}
+
+.login-wrapper button {
+    color: #fff !important;
+}

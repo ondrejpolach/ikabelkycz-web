@@ -15,6 +15,7 @@
 #footer .footer-newsletter {
     border-top-style: solid;
     border-top-width: 1px;
+    margin-top: 25px;
 }
 
 .footer-bottom, .footer-newsletter {
@@ -38,9 +39,23 @@
     height: 60%;
 }
 
+#footer .custom-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#footer .custom-footer > div:nth-child(1) {
+    grid-column: 1;
+}
+
 @media screen and (min-width: 768px) {
     #footer .banner-horizontal img {
         height: 100%;
+    }
+
+    #footer .custom-footer {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -52,6 +67,9 @@
         justify-content: space-between;
     }       
 
+    #footer .custom-footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (min-width: 1200px) {

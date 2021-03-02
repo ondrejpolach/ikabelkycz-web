@@ -47,6 +47,29 @@ const App = function () {
         const customContainer = $('<div class="custom-detail-container">');
         customContainer.append($('.p-detail-tabs-wrapper')).append($('.p-param-block'))
         customContainer.insertAfter($('.p-detail-inner'));
+
+        $('.login-wrapper .btn-login')
+            .removeClass('btn-secondary')
+            .addClass('btn-default')
+
+        $('body')
+            .removeClass('columns-3')
+            .addClass('columns-4');
+
+        $('.custom-footer').removeClass('elements-3')
+        $('.custom-footer .col-sm-4').removeClass('col-sm-4')
+
+        const newColumn = $('.custom-footer > div:nth-child(2)').clone();
+        $('h4 span', newColumn).text('Průvodce nakupováním');
+        $('ul',newColumn)
+            .empty()
+            .append('<li><a href="/sitemap.xml" title="Sitemap">Sitemap</a></li>')
+            .append('<li><a href="/doprava-platba/" title="Doprava a Platba">Doprava a Platba</a></li>')
+            .append('<li><a href="/reklamace-zbozi/" title="Reklamace Zboží">Reklamace Zboží</a></li>')
+            .append('<li><a href="/vraceni-zbozi" title="Postup vrácení zboží ve 30 denní lhůtě">Postup vrácení zboží ve 30 denní lhůtě</a></li>')
+            .append('<li><a href="/obchodni-podminky" title="Obchodní podmínky">Obchodní podmínky</a></li>')
+        newColumn.insertAfter($('.custom-footer > div:nth-child(2)'))
+
     }
 
     const onResize = () => {
