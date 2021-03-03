@@ -40,7 +40,7 @@ const App = function () {
         footerBanners.append(`<img src="${fb2}"/>`);
         footerBanners.append(`<img src="${fb3}"/>`);
         footerBanners.append(`<img src="${fb4}"/>`);        
-        footerBanners.insertAfter($('#footer .footer-newsletter'));
+        footerBanners.insertBefore($('#footer .footer-newsletter'));
         $('#footer .banner-wrapper img').attr('src', logo);
         $('<div class="banner-grid">').insertAfter($('.type-detail .p-to-cart-block'));
 
